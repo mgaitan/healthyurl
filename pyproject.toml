@@ -3,7 +3,7 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "healthchecker"
+name = "healthyurl"
 description = "A lightweight command-line tool for performing HTTP health checks using Python's standard library. Exits with code 1 on HTTP errors."
 authors = [
     { name="Martín Gaitán", email="gaitan@gmail.com" }
@@ -18,7 +18,7 @@ dynamic = ['version']
 test = ["pytest", "pytest-mock"]
 
 [project.urls]
-Home = "https://github.com/mgaitan/healthchecker"
+Home = "https://github.com/mgaitan/healthyurl"
 
 [project.scripts]
-healthchecker = "healthchecker:main"
+healthyurl = "healthyurl:main"

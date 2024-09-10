@@ -1,6 +1,6 @@
 import pytest
 import urllib.request
-from healthchecker import check_health
+from healthyurl import check_health
 
 
 def test_check_health_valid_url(mocker):
