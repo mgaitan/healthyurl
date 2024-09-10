@@ -9,12 +9,10 @@ A simple command-line tool to perform health checks on a given URL using Python'
 
 ## Installation
 
-You can install `healthchecker` by cloning the repository and using `pip`:
-
 For a minimal installation in Docker:
 
 ```Dockerfile
-COPY --chmod=755 https://raw.githubusercontent.com/mgaitan/healthchecker/main/healthchecker.py /usr/bin/healthchecker
+ADD --chmod=755 https://raw.githubusercontent.com/mgaitan/healthchecker/main/healthchecker.py /usr/bin/healthchecker
 ```
 
 This will allow you to use `healthchecker` in your container without installing any external dependencies or increasing the image size by around 4.3%, as `curl` does when installed.
