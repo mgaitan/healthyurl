@@ -80,3 +80,5 @@ In the same way, To use `healthyurl` in an ECS task definition, you can configur
 ```
 
 Both examples show how `healthyurl` can replace `curl`, `wget` etc for basic health checks, helping reduce image size and build times, especially for lightweight Python-based containerized applications.
+
+By the way, the functionality provided by **healthyurl** was originally proposed to be included in the Python standard library as a minimal CLI for performing HTTP health checks using `python -m urllib.request` or similar. You can follow the ongoing discussion and provide feedback [here](https://discuss.python.org/t/add-a-minimal-cli-functionality-to-urllib-request/63383).
